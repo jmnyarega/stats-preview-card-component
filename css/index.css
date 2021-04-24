@@ -1,0 +1,133 @@
+:root {
+  --v-dark-blue: hsl(233, 47%, 7%);
+  --dark-saturated-blue: hsl(244, 38%, 16%);
+  --soft-violet: hsl(277, 64%, 61%);
+  --black: hsl(0, 0%, 0%);
+  --white: hsl(0, 0%, 100%);
+  --white-1: hsla(0, 0%, 100%, 0.75);
+  --white-2: hsla(0, 0%, 100%, 0.6);
+  --border-radius: 0.5rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 0.9375rem;
+  background-color: var(--black);
+  max-width: 1400px;
+  height: 100vh;
+  margin: 0 auto;
+  display: grid;
+  place-items: center;
+}
+
+/*
+ * Components
+ *  1. container
+ *  2. card
+ *
+ */
+
+.container {
+  padding: 0.5rem 2.5rem;
+}
+
+.card {
+  background-color: var(--dark-saturated-blue);
+  border-radius: var(--border-radius);
+}
+
+.card__image {
+  background: no-repeat url(../images/image-header-mobile.jpg);
+  background-color: var(--soft-violet);
+  background-blend-mode: multiply;
+  border-radius: var(--border-radius) var(--border-radius) 0 0;
+  height: 250px;
+  object-fit: cover;
+}
+
+.card-body {
+  max-width: 50ch;
+  padding: 2rem;
+  margin: 0.2rem;
+  text-align: center;
+  color: var(--white);
+}
+
+.card__title {
+  font-weight: 700;
+  font-size: 1.7rem;
+}
+
+.card__description {
+  color: var(--white-2);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.stat {
+  margin: 1.5rem 0;
+}
+
+.stat__label {
+  font-weight: bold;
+  font-size: 1.7rem;
+  margin: 0;
+}
+
+.stat__value {
+  text-transform: uppercase;
+  color: var(--white-2);
+  font-size: 0.9rem;
+  margin-top: 0.4rem;
+  font-family: "Lexend", sans-serif;
+}
+
+/*
+ * UTILS
+ *
+ */
+
+.accent-color {
+  color: var(--soft-violet);
+}
+
+/*
+ * Media Queries
+ *
+ */
+@media (min-width: 375px) {
+  .card-body {
+    text-align: left;
+  }
+
+  .card__stats {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+  }
+
+  .card__image {
+    background-image: url(../images/image-header-desktop.jpg);
+    height: 100%;
+    min-width: 350px;
+    border-radius: 0 var(--border-radius) var(--border-radius) 0;
+    grid-column: 2;
+    grid-row: 1;
+    object-position: center;
+  }
+
+  .card-body {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .card {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+  }
+}
