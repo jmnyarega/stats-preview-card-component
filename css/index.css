@@ -22,9 +22,9 @@ body {
   place-items: center; }
   @media (min-width: 50em) {
     body {
-      --bg--spacer: 3rem;
-      --md-spacer: 2rem;
-      --sm-spacer: 1.5rem;
+      --bg--spacer: 5rem;
+      --md-spacer: 3rem;
+      --sm-spacer: 2rem;
       --fs-base: 1rem;
       --fs-h2: 1.5rem;
       --fs-h1: 2rem; } }
@@ -70,7 +70,8 @@ img {
       border-radius: 0.5rem 0 0 0.5rem;
       text-align: initial;
       margin-top: 0;
-      width: 50%; } }
+      width: 50%;
+      padding: var(--md-spacer); } }
 
 .card__title {
   max-width: 18ch;

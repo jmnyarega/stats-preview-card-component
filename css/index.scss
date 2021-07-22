@@ -33,9 +33,9 @@ body {
   place-items: center;
 
   @media (min-width: $desktop) {
-    --bg--spacer: 3rem;
-    --md-spacer: 2rem;
-    --sm-spacer: 1.5rem;
+    --bg--spacer: 5rem;
+    --md-spacer: 3rem;
+    --sm-spacer: 2rem;
 
     --fs-base: 1rem;
     --fs-h2: 1.5rem;
@@ -89,6 +89,8 @@ img {
       text-align: initial;
       margin-top: 0;
       width: 50%;
+
+      padding: var(--md-spacer);
     }
   }
 
