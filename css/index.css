@@ -50,7 +50,7 @@ img {
       background-image: url(../images/image-header-desktop.jpg);
       background-repeat: no-repeat;
       background-position: bottom right 35%;
-      min-height: 27rem;
+      min-height: 27.5rem;
       width: 50%; } }
 
 @media (min-width: 50em) {
