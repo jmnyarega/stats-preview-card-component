@@ -63,8 +63,8 @@ img {
       background-image: url(../images/image-header-desktop.jpg);
       background-repeat: no-repeat;
       background-position: bottom right 35%;
-      min-height: 30rem;
-      width: 55%;
+      min-height: 26rem;
+      width: 50%;
     }
   }
   @media (min-width: $desktop) {
@@ -84,7 +84,7 @@ img {
       border-radius: $border-radius 0 0 $border-radius;
       text-align: initial;
       margin-top: 0;
-      width: 45%;
+      width: 50%;
     }
   }
 
