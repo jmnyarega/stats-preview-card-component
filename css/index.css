@@ -30,7 +30,7 @@ img {
   max-width: 100%; }
 
 .container {
-  max-width: 55em;
+  max-width: 60em;
   width: 90%;
   margin: 0 auto; }
 
@@ -45,8 +45,10 @@ img {
     .card__image {
       border-radius: 0 0.5rem 0.5rem 0;
       background-image: url(../images/image-header-desktop.jpg);
-      min-height: 25rem;
-      width: 50%; } }
+      background-repeat: no-repeat;
+      background-position: bottom right 35%;
+      min-height: 30rem;
+      width: 55%; } }
 
 @media (min-width: 50em) {
   .card {
@@ -65,7 +67,7 @@ img {
       border-radius: 0.5rem 0 0 0.5rem;
       text-align: initial;
       margin-top: 0;
-      width: 50%; } }
+      width: 45%; } }
 
 .card__title {
   max-width: 20ch;
