@@ -56,12 +56,12 @@ img {
     background-image: url(../images/image-header-mobile.jpg);
     background-size: cover;
     background-blend-mode: multiply;
-    height: 20rem;
+    min-height: 20rem;
 
     @media (min-width: $desktop) {
       border-radius: 0 $border-radius $border-radius 0;
       background-image: url(../images/image-header-desktop.jpg);
-      height: auto;
+      min-height: 25rem;
       width: 50%;
     }
   }
@@ -76,6 +76,7 @@ img {
     padding: var(--bg--spacer) var(--md-spacer)  var(--md-spacer);
     background-color: $dark-saturated-blue;
     color: $white;
+    display: grid;
 
     @media (min-width: $desktop) {
       border-radius: $border-radius 0 0 $border-radius;
@@ -126,6 +127,7 @@ img {
     @media (min-width: $desktop) {
       display: flex;
       justify-content: space-between;
+      align-items: flex-end;
       max-width: 40ch;
     }
   }

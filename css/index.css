@@ -40,12 +40,12 @@ img {
   background-image: url(../images/image-header-mobile.jpg);
   background-size: cover;
   background-blend-mode: multiply;
-  height: 20rem; }
+  min-height: 20rem; }
   @media (min-width: 50em) {
     .card__image {
       border-radius: 0 0.5rem 0.5rem 0;
       background-image: url(../images/image-header-desktop.jpg);
-      height: auto;
+      min-height: 25rem;
       width: 50%; } }
 
 @media (min-width: 50em) {
@@ -58,7 +58,8 @@ img {
   font-size: var(--fs-base);
   padding: var(--bg--spacer) var(--md-spacer) var(--md-spacer);
   background-color: #1b1938;
-  color: white; }
+  color: white;
+  display: grid; }
   @media (min-width: 50em) {
     .card__body {
       border-radius: 0.5rem 0 0 0.5rem;
@@ -102,4 +103,5 @@ img {
     .card__stats {
       display: flex;
       justify-content: space-between;
+      align-items: flex-end;
       max-width: 40ch; } }
